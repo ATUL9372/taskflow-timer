@@ -49,10 +49,15 @@ A modern, beautiful Pomodoro timer and task management application built with Re
    mkdir taskflow-timer-v9
    cd taskflow-timer-v9
 
-1. **Install Dependencies**
+2. **Install Dependencies**
    ```
    npm install
    npm install lucide-react
    npm install -D tailwindcss postcss autoprefixer
+
+   ```
+3. **Run Project**
+   ```
    npm run dev
+
    ```
