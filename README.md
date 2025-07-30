@@ -1,4 +1,4 @@
-# 🎯 Taskflow Timer v9
+# 🎯 Taskflow Timer
 
 A modern, beautiful Pomodoro timer and task management application built with React, Vite, and Tailwind CSS.
 
