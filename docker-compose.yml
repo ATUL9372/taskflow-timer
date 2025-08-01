@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  
+  taskflow-timer:
+    image: taskflow-timer:v1  # Change the version's 
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/app
+    command: npm run dev
