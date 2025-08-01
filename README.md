@@ -42,22 +42,38 @@ A modern, beautiful Pomodoro timer and task management application built with Re
 - **Node.js** 18+ (Download from [nodejs.org](https://nodejs.org))
 - **npm** 8+ (comes with Node.js)
 
-### Installation Steps
+### Manual Installation Steps
 
 1. **Create Project Directory**
    ```bash
    mkdir taskflow-timer-v9
+   ```
+   ``bash
    cd taskflow-timer-v9
+   ```
 
 2. **Install Dependencies**
    ```
    npm install
    npm install lucide-react
    npm install -D tailwindcss postcss autoprefixer
-
    ```
 3. **Run Project**
    ```
    npm run dev
-
    ```
+### Run With Docker-Compose file
+
+1. **Build Dockerfile using Docker-Compose file**
+   ```bash
+   docker-compose build
+   ```
+2. **Run Docker Container Method-1**
+   ```bash
+   docker run -it -p 3000:3000 <Enter_Image_ID>
+   ```
+3. **Run Docker Container Method-2**
+   ```bash
+   docker run -it -p 3000:3000 taskflow-timer:v1
+   ```
+   Note : change v1 to latest version

@@ -1,0 +1,40 @@
+FROM node:20-alpine AS installations
+
+LABEL MAINTAINER="Atuly9372"
+
+WORKDIR /app
+
+COPY . .
+
+RUN apk update &&\
+    apk add tree &&\
+    npm install &&\
+    npm install lucide-react &&\
+    npm install -D tailwindcss postcss autoprefixer
+
+
+FROM node:20-alpine AS build
+
+WORKDIR /app
+COPY --from=installations /app .
+
+RUN npm run build
+
+RUN ls -al &&\
+    tree dist/ &&\
+    cd dist &&\
+    pwd
+
+
+#FROM node:20-alpine
+
+FROM nginx:latest 
+
+
+WORKDIR /app
+
+COPY --from=build /app/ . 
+
+EXPOSE 3000
+
+CMD [ "npm", "run", "dev" ]
