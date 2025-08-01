@@ -47,9 +47,7 @@ A modern, beautiful Pomodoro timer and task management application built with Re
 1. **Git Clone Directory**
    ```bash
    https://github.com/ATUL9372/taskflow-timer.git
-   ```
    
-   ``bash
    cd taskflow-timer
    ```
 
