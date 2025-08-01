@@ -44,12 +44,13 @@ A modern, beautiful Pomodoro timer and task management application built with Re
 
 ### Manual Installation Steps
 
-1. **Create Project Directory**
+1. **Git Clone Directory**
    ```bash
-   mkdir taskflow-timer-v9
+   https://github.com/ATUL9372/taskflow-timer.git
    ```
+   
    ``bash
-   cd taskflow-timer-v9
+   cd taskflow-timer
    ```
 
 2. **Install Dependencies**
